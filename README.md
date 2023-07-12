@@ -3,7 +3,6 @@ This is a highlight of my abilities and prociency in SQL! In this example, I am 
 
 **Query**
 
-
 WITH revenue_data AS (
   SELECT
     customer_id,
