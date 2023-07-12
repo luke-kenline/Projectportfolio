@@ -27,9 +27,10 @@ ORDER BY
   order_date;
 
 **Explained:**
-1. The query begins with a CTE named revenue_data. The CTE retrieves data from the orders table and calculates three window functions: SUM() OVER, LAG() OVER. The SUM() OVER function calculates the cumulative revenue for each customer by ordering the records by the order date. The LAG() OVER function retrieves the previous revenue for each customer based on the order date.
-
-The main query selects the columns customer_id, order_date, revenue, cumulative_revenue, and revenue_change from the revenue_data CTE.
+1. The query begins with a CTE named revenue_data. The CTE retrieves data from the orders table and calculates three window functions: SUM() OVER, LAG() OVER.
+2. The SUM() OVER function calculates the cumulative revenue for each customer by ordering the records by the order date.
+3. The LAG() OVER function retrieves the previous revenue for each customer based on the order date.
+4. The main query selects the columns customer_id, order_date, revenue, cumulative_revenue, and revenue_change from the revenue_data CTE.
 
 The revenue_change column calculates the difference between the current revenue and the previous revenue for each customer. This helps identify how much the revenue has changed from one order to the next.
 
