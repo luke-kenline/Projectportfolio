@@ -1,7 +1,8 @@
 **Overview**
 This is a highlight of my abilities and prociency in SQL! In this example, I am analyzing customer revenue changes over time to detect customer behavior. The goal of highlighting this example is to highlight my comfortability with window functions, aggregating data and subquries.
 
-**Data**
+**Query**
+
 
 WITH revenue_data AS (
   SELECT
